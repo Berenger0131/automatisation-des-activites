@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #071325;
+    color: #FFFFFF;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #071325;
+    color: #FFFFFF !important;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Force all standard text elements to be white or inherit white color */
+  p, span, label, h1, h2, h3, h4, h5, h6, th, td, div, li, strong, b, small {
+    color: inherit;
+  }
+
+  /* Universal Form Input & Select Styling for White Text & High Contrast */
+  input, select, textarea {
+    color: #FFFFFF !important;
+    background-color: #020617;
+    border-color: #334155;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #94A3B8 !important;
+  }
+
+  /* Force select options to have dark background and crisp white text */
+  option, optgroup {
+    background-color: #0B192C !important;
+    color: #FFFFFF !important;
+    font-weight: 600;
+  }
+}
+
+.font-slogan {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Burkina Faso Flag Bar (Disabled/Removed per user request) */
+.burkina-flag-bar {
+  display: none !important;
+}
+
+/* Institutional Glassmorphism & Header */
+.glass-header {
+  background: rgba(11, 25, 44, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-sidebar {
+  background: rgba(11, 25, 44, 0.98);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B192C;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0EA5E9;
+}
+
+/* Custom Subtle Electrical Grid Background Pattern */
+.bg-electric-pattern {
+  background-image: radial-gradient(rgba(14, 165, 233, 0.25) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-institutional-gradient {
+  background: linear-gradient(135deg, #03152E 0%, #0B192C 50%, #0F172A 100%);
+}
+
+/* Smooth Focus Ring Style */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #0EA5E9 !important;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.35) !important;
+}
+
+/* High-Visibility Professional Button Classes with Softened Navy/Slate-Blue Backgrounds */
+.btn-pro-cyan {
+  background-color: #0E223D;
+  color: #FFFFFF !important;
+  font-weight: 900;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 4px 12px -2px rgba(14, 34, 61, 0.5);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-pro-cyan:hover {
+  background-color: #16345C;
+  border-color: #38BDF8;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px -2px rgba(56, 189, 248, 0.3);
+}
+
+.btn-pro-blue {
+  background-color: #0E223D;
+  color: #FFFFFF !important;
+  font-weight: 800;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 12px -2px rgba(14, 34, 61, 0.5);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-pro-blue:hover {
+  background-color: #16345C;
+  border-color: #60A5FA;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px -2px rgba(59, 130, 246, 0.3);
+}
+
+.btn-pro-emerald {
+  background-color: #059669;
+  color: #FFFFFF !important;
+  font-weight: 800;
+  border: 1px solid #34D399;
+  box-shadow: 0 8px 16px -2px rgba(5, 150, 105, 0.35);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-pro-emerald:hover {
+  background-color: #047857;
+  border-color: #6EE7B7;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 20px -2px rgba(5, 150, 105, 0.5);
+}
+
+.btn-pro-dark {
+  background-color: #0F172A;
+  color: #FFFFFF !important;
+  font-weight: 800;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-pro-dark:hover {
+  background-color: #1E293B;
+  border-color: #38BDF8;
+  color: #38BDF8 !important;
+}
+
+
+
